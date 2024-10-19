@@ -1,0 +1,25 @@
+{
+  "profession": "minecraft:cartographer",
+  "trades": [
+    {
+      "offer": {
+        "itemKey": "waystones:waystone",
+        "amount": 1
+      },
+      "request": {
+        "itemKey": "minecraft:emerald",
+        "amount": 6
+      },
+      "additionalRequest": {
+        "itemKey": "waystones:warp_stone",
+        "amount": 1
+      },
+      "tradeExp": 30,
+      "maxUses": 1,
+      "priceMultiplier": 10,
+      "demand": 1,
+      "tradeLevel": 5,
+      "UTID": "minecraft:cartographer_waystone"
+    }
+  ]
+}

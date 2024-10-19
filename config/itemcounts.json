@@ -1,0 +1,103 @@
+{
+  "mainHand_relativeToHotbarConfig": {
+    "enabled": false,
+    "countOption": "ALWAYS",
+    "durabilityFilter": "GOLD_DIAMOND_NETHERITE",
+    "durabilityOption": "ALWAYS",
+    "iconOption": "ALWAYS",
+    "offset": {
+      "x": 0,
+      "y": -5,
+      "textScale": 0.75,
+      "anchor": "CENTER"
+    },
+    "colors": {
+      "enableCustomColors": false,
+      "colorItemCount": 16777215,
+      "colorDurabilityHigh": 65280,
+      "colorDurabilityLow": 16711680
+    }
+  },
+  "mainHand_relativeToCrosshairConfig": {
+    "enabled": false,
+    "countOption": "ALWAYS",
+    "durabilityFilter": "GOLD_DIAMOND_NETHERITE",
+    "durabilityOption": "ALWAYS",
+    "iconOption": "ALWAYS",
+    "offset": {
+      "x": -10,
+      "y": 10,
+      "textScale": 0.5,
+      "anchor": "CENTER"
+    },
+    "colors": {
+      "enableCustomColors": false,
+      "colorItemCount": 16777215,
+      "colorDurabilityHigh": 65280,
+      "colorDurabilityLow": 16711680
+    }
+  },
+  "offHand_relativeToHotbarConfig": {
+    "enabled": false,
+    "countOption": "ALWAYS",
+    "durabilityFilter": "GOLD_DIAMOND_NETHERITE",
+    "durabilityOption": "ALWAYS",
+    "iconOption": "ALWAYS",
+    "offset": {
+      "x": 0,
+      "y": -5,
+      "textScale": 0.75,
+      "anchor": "CENTER"
+    },
+    "colors": {
+      "enableCustomColors": false,
+      "colorItemCount": 16777215,
+      "colorDurabilityHigh": 65280,
+      "colorDurabilityLow": 16711680
+    }
+  },
+  "offHand_relativeToCrosshairConfig": {
+    "enabled": false,
+    "countOption": "ALWAYS",
+    "durabilityFilter": "GOLD_DIAMOND_NETHERITE",
+    "durabilityOption": "ALWAYS",
+    "iconOption": "ALWAYS",
+    "offset": {
+      "x": 10,
+      "y": 10,
+      "textScale": 0.5,
+      "anchor": "CENTER"
+    },
+    "colors": {
+      "enableCustomColors": false,
+      "colorItemCount": 16777215,
+      "colorDurabilityHigh": 65280,
+      "colorDurabilityLow": 16711680
+    }
+  },
+  "hotbar_relativeToHotbarConfig": {
+    "enabled": true,
+    "countOption": "MORE_THAN_STACK",
+    "durabilityFilter": "GOLD_DIAMOND_NETHERITE",
+    "durabilityOption": "NEVER",
+    "iconOption": "NEVER",
+    "offset": {
+      "x": 0,
+      "y": -5,
+      "textScale": 0.75,
+      "anchor": "CENTER"
+    },
+    "colors": {
+      "enableCustomColors": false,
+      "colorItemCount": 16777215,
+      "colorDurabilityHigh": 65280,
+      "colorDurabilityLow": 16711680
+    }
+  },
+  "item_count_rules": {
+    "separateNbtData": true,
+    "separateName": false,
+    "separateDurability": false
+  },
+  "show_vanilla_count": true
+}

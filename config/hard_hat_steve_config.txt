@@ -1,0 +1,7 @@
+###############################
+# ONLY MAKE 1 VALUE = TRUE    #
+# ELSE THE MOD WILL NOT LOAD  #
+###############################
+
+reach=0.5
+

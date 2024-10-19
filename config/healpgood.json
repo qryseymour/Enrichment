@@ -1,0 +1,22 @@
+{
+  "regularchance": 8.33,
+  "bosschance": 100,
+  "regmin": 1,
+  "regmax": 1,
+  "bossmin": 5,
+  "bossmax": 9,
+  "bosshealththreshold": 150,
+  "otherBossList": [
+    "minecraft:elder_guardian",
+    "minecraft:ravager"
+  ],
+  "entityhealth": false,
+  "tempamount": 0,
+  "tempmax": 0,
+  "permamount": 2,
+  "permmax": 20,
+  "holidayHearts": true,
+  "baglification": false,
+  "removeVictusHeart": false,
+  "victusHeartGiven": false
+}

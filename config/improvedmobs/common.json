@@ -1,0 +1,707 @@
+{
+  "version": 1,
+  "Enable difficulty scaling": {
+    "__comment": [
+      "Disable/Enables the whole difficulty scaling of this mod. Requires a mc restart"
+    ],
+    "input": false
+  },
+  "Difficulty Delay": {
+    "__comment": [
+      "Time in ticks for which the difficulty shouldnt increase at the beginning. One full minecraft day is 24000 ticks",
+      "Range: > 0"
+    ],
+    "input": 0
+  },
+  "Difficulty Increase": {
+    "__comment": [
+      "Handles increase in difficulty regarding current difficulty.",
+      "Format is <minimum current difficulty>-<increase every 2400 ticks>",
+      "Example [\"0-0.01\",\"10-0.1\",\"30-0\"]",
+      "-> So the difficulty increases by 0.01 every 2400 ticks (->0.1 per mc day since a mc day has 24000 ticks) till it reaches a difficulty of 10.",
+      "Then it increases by 1 per mc day till it reaches 30 and then stops."
+    ],
+    "input": [
+      "0-0.1",
+      "250-0"
+    ]
+  },
+  "Ignore Players": {
+    "__comment": [
+      "Wether difficulty should only increase with at least one online players or not"
+    ],
+    "input": false
+  },
+  "Punish Time Skip": {
+    "__comment": [
+      "If true will increase difficulty by the amount of time skipped. Else will only increase difficulty once."
+    ],
+    "input": true
+  },
+  "FriendlyFire": {
+    "__comment": [
+      "Disable/Enable friendly fire for owned pets."
+    ],
+    "input": false
+  },
+  "Pet Blacklist": {
+    "__comment": [
+      "Blacklist for pet you should't be able to give armor to. Pets from mods, which have custom armor already should be included here (for balancing reasons)."
+    ],
+    "input": []
+  },
+  "Pet Whitelist": {
+    "__comment": [
+      "Treat pet blacklist as whitelist"
+    ],
+    "input": false
+  },
+  "Difficulty toggle": {
+    "__comment": [
+      "Increase difficulty with time",
+      "Here untill its back as a gamerule"
+    ],
+    "input": true
+  },
+  "Difficulty type": {
+    "__comment": [
+      "How the difficulty at a position is calculated. Supported values are: ",
+      "GLOBAL: Serverwide difficulty value",
+      "PLAYERMAX: Maximum difficulty of players in a 256 radius around the position",
+      "PLAYERMEAN: Average difficulty of players in a 256 radius around the position",
+      "Allowed Values: GLOBAL, PLAYERMAX, PLAYERMEAN"
+    ],
+    "input": "PLAYERMEAN"
+  },
+  "Entity Configs": {
+    "__comment": [
+      "Entities added here will be blacklisted from their assigned flags. Usage:",
+      "<entity registry name> or <namespace> followed by any of:",
+      "[ALL,ATTRIBUTES,ARMOR,HELDITEMS,BLOCKBREAK,USEITEM,LADDER,STEAL,GUARDIAN,PARROT,TARGETVILLAGER,NEUTRALAGGRO,REVERSE].",
+      "Having no flags is equal to ALL. Use REVERSE to reverse all flags. Some flags do nothing for certain mobs!",
+      "Examples (without <>):",
+      "<minecraft:sheep> (equal to minecraft:sheep|ALL) excludes sheeps from all modifications",
+      "<minecraft:sheep|REVERSE|ATTRIBUTES will> add sheep to attributes modification only",
+      "<minecraft:sheep|ATTRIBUTES> will add sheep to everything except attributes",
+      "<minecraft> blacklists all minecraft mobs from everything"
+    ],
+    "input": [
+      "betterend:cubozoa",
+      "botania:doppleganger",
+      "naturalist:deer",
+      "mythicmobs:mushroom_thing",
+      "minecraft:glow_squid",
+      "naturalist:butterfly",
+      "byg:pumpkin_warden",
+      "minecraft:strider",
+      "minecraft:trader_llama",
+      "minecraft:parrot",
+      "naturalist:rhino",
+      "naturalist:elephant",
+      "naturalist:dragonfly",
+      "bosses_of_mass_destruction:lich",
+      "minecraft:horse",
+      "betternether:flying_pig",
+      "betterend:silk_moth",
+      "betternether:naga_projectile",
+      "minecraft:polar_bear",
+      "mutantmonsters:mutant_snow_golem",
+      "minecraft:bat",
+      "minecraft:wandering_trader",
+      "minecraft:llama",
+      "minecraft:pig",
+      "naturalist:cardinal",
+      "minecraft:frog",
+      "minecraft:iron_golem",
+      "minecraft:turtle",
+      "naturalist:rattlesnake",
+      "minecraft:sheep",
+      "moretotems:summoned_bee",
+      "mutantmonsters:creeper_minion",
+      "bosses_of_mass_destruction:gauntlet",
+      "bosses_of_mass_destruction:obsidilith",
+      "naturalist:firefly",
+      "minecraft:tadpole",
+      "minecraft:goat",
+      "botania:pixie",
+      "naturalist:hippo",
+      "minecraft:dolphin",
+      "mythicmobs:drake",
+      "naturalist:snake",
+      "naturalist:lion",
+      "naturalist:alligator",
+      "minecraft:cod",
+      "naturalist:lizard_tail",
+      "betternether:hydrogen_jellyfish",
+      "naturalist:robin",
+      "naturalist:tortoise",
+      "minecraft:donkey",
+      "naturalist:bear",
+      "naturalist:canary",
+      "naturalist:caterpillar",
+      "minecraft:squid",
+      "minecraft:mule",
+      "minecraft:skeleton_horse",
+      "mutantmonsters:spider_pig",
+      "betterend:dragonfly",
+      "naturalist:vulture",
+      "naturalist:catfish",
+      "naturalist:zebra",
+      "naturalist:boar",
+      "minecraft:cow",
+      "minecraft:zombie_horse",
+      "naturalist:duck",
+      "minecraft:bee",
+      "naturalist:giraffe",
+      "minecraft:cat",
+      "minecraft:pufferfish",
+      "naturalist:lizard",
+      "byg:man_o_war",
+      "minecraft:salmon",
+      "naturalist:bluejay",
+      "minecraft:fox",
+      "bosses_of_mass_destruction:void_blossom",
+      "minecraft:allay",
+      "minecraft:tropical_fish",
+      "naturalist:coral_snake",
+      "naturalist:snail",
+      "minecraft:snow_golem",
+      "minecraft:mooshroom",
+      "betterend:end_fish",
+      "minecraft:villager",
+      "minecraft:ocelot",
+      "minecraft:chicken",
+      "betternether:firefly",
+      "rottencreatures:treasure_chest",
+      "minecraft:wolf",
+      "minecraft:panda",
+      "naturalist:bass",
+      "rottencreatures:hunter_wolf",
+      "minecraft:rabbit",
+      "mythicmobs:automaton",
+      "minecraft:axolotl"
+    ]
+  },
+  "Flag Blacklist": {
+    "__comment": [
+      "Any of the following ",
+      "[ATTRIBUTES, ARMOR, HELDITEMS, BLOCKBREAK, USEITEM, LADDER, STEAL, GUARDIAN, PARROT, TARGETVILLAGER, NEUTRALAGGRO]",
+      "added here will disable that feature completely.",
+      "E.g. [\"GUARDIAN\"] will disable the guardian feature"
+    ],
+    "input": []
+  },
+  "Attribute Whitelist": {
+    "__comment": [
+      "Treat ATTRIBUTES flags as whitelist"
+    ],
+    "input": false
+  },
+  "Armor Equip Whitelist": {
+    "__comment": [
+      "Treat ARMOR flags as whitelist"
+    ],
+    "input": false
+  },
+  "Held Equip Whitelist": {
+    "__comment": [
+      "Treat HELDITEMS flags as whitelist"
+    ],
+    "input": false
+  },
+  "Breaker Whitelist": {
+    "__comment": [
+      "Treat BLOCKBREAK flags as whitelist"
+    ],
+    "input": false
+  },
+  "Item Use Whitelist": {
+    "__comment": [
+      "Turn the use blacklist into a whitelist"
+    ],
+    "input": false
+  },
+  "Ladder Whitelist": {
+    "__comment": [
+      "Treat LADDER flags as whitelist"
+    ],
+    "input": false
+  },
+  "Steal Whitelist": {
+    "__comment": [
+      "Treat STEAL flags as whitelist"
+    ],
+    "input": false
+  },
+  "Guardian Whitelist": {
+    "__comment": [
+      "Treat GUARDIAN flags as whitelist"
+    ],
+    "input": false
+  },
+  "Phantom Whitelist": {
+    "__comment": [
+      "Treat PARROT flags as whitelist"
+    ],
+    "input": false
+  },
+  "Villager Whitelist": {
+    "__comment": [
+      "Treat TARGETVILLAGER flags as whitelist"
+    ],
+    "input": false
+  },
+  "Neutral Aggro Whitelist": {
+    "__comment": [
+      "Treat NEUTRALAGGRO flags as whitelist"
+    ],
+    "input": false
+  },
+  "Use Scaling Health Mod": {
+    "__comment": [
+      "Should the scaling health mods difficulty system be used instead of this ones. (Requires scaling health mod)"
+    ],
+    "input": true
+  },
+  "Use Player EX Mod": {
+    "__comment": [
+      "If true and playerEx is installed will use the level from playerEx as difficulty"
+    ],
+    "input": true
+  },
+  "Use LevelZ Mod": {
+    "__comment": [
+      "If true and LevelZ is installed will use the the total skill level from LevelZ as difficulty"
+    ],
+    "input": true
+  },
+  "Block Break Whitelist": {
+    "__comment": [
+      "Whitelist for blocks, which can be actively broken. ",
+      "Usage: <registry name;classname;tag;namespace> put \"!\" infront to exclude blocks",
+      "Note: If you include common blocks (like grass blocks) the pathfinding can have undesirable results."
+    ],
+    "input": [
+      "minecraft:mineable/hoe",
+      "minecraft:mineable/shovel",
+      "minecraft:wooden_doors",
+      "minecraft:sword_efficient",
+      "minecraft:overworld_carver_replaceables"
+    ]
+  },
+  "Breaklist as Blacklist": {
+    "__comment": [
+      "Treat Block Whitelist as Blocklist"
+    ],
+    "input": false
+  },
+  "Sound": {
+    "__comment": [
+      "Use the block breaking sound instead of a knocking sound"
+    ],
+    "input": false
+  },
+  "Breaker Chance": {
+    "__comment": [
+      "Chance for a mob to be able to break blocks",
+      "Range: 0.0 ~ 1.0"
+    ],
+    "input": 0.3
+  },
+  "Breaker Initial Cooldown": {
+    "__comment": [
+      "Initial cooldown for block breaking mobs",
+      "Range: > 0"
+    ],
+    "input": 120
+  },
+  "Breaker Cooldown": {
+    "__comment": [
+      "Cooldown for breaking blocks",
+      "Range: > 0"
+    ],
+    "input": 20
+  },
+  "Idle Break": {
+    "__comment": [
+      "If mobs should break blocks when not chasing a target"
+    ],
+    "input": true
+  },
+  "Stealer Chance": {
+    "__comment": [
+      "Chance for a mob to be able to steal items from inventory blocks",
+      "Range: 0.0 ~ 1.0"
+    ],
+    "input": 0.0
+  },
+  "Breaking items": {
+    "__comment": [
+      "Items which will be given to mobs who can break blocks. Empty list = no items. Syntax: id;weight",
+      "Note: Mobs can only break blocks if the tool they are holding can break the blocks"
+    ],
+    "input": [
+      "minecraft:diamond_pickaxe;1",
+      "minecraft:iron_axe;2"
+    ]
+  },
+  "Break BlockEntities": {
+    "__comment": [
+      "Should mobs be able to break block entities? Evaluated before the break list"
+    ],
+    "input": true
+  },
+  "Neutral Aggressive Chance": {
+    "__comment": [
+      "Chance for neutral mobs to be aggressive",
+      "Range: 0.0 ~ 1.0"
+    ],
+    "input": 0.0
+  },
+  "Auto Target List": {
+    "__comment": [
+      "List for of pairs containing which mobs auto target others. Syntax is [mob id]-[mob id] where second value is the target.",
+      " e.g. minecraft:zombie-minecraft:skeleton makes all zombies target skeletons"
+    ],
+    "input": [
+      "minecraft:creeper-minecraft:iron_golem",
+      "minecraft:creeper-minecraft:wolf",
+      "minecraft:evoker-minecraft:wolf",
+      "minecraft:evoker-minecraft:cat",
+      "minecraft:ghast-minecraft:iron_golem",
+      "minecraft:ghast-minecraft:wolf",
+      "minecraft:ghast-minecraft:cat",
+      "minecraft:illusioner-minecraft:wolf",
+      "minecraft:illusioner-minecraft:cat",
+      "minecraft:piglin-minecraft:villager",
+      "minecraft:piglin-minecraft:iron_golem",
+      "minecraft:piglin_brute-minecraft:villager",
+      "minecraft:piglin_brute-minecraft:iron_golem",
+      "minecraft:piglin_brute-minecraft:wolf",
+      "minecraft:piglin_brute-minecraft:cat",
+      "minecraft:pillager-minecraft:wolf",
+      "minecraft:pillager-minecraft:cat",
+      "minecraft:skeleton-minecraft:wolf",
+      "minecraft:skeleton-minecraft:cat",
+      "minecraft:vex-minecraft:iron_golem",
+      "minecraft:vex-minecraft:wolf",
+      "minecraft:vex-minecraft:cat",
+      "minecraft:vindicator-minecraft:wolf",
+      "minecraft:vindicator-minecraft:cat",
+      "minecraft:wither_skeleton-minecraft:wolf",
+      "minecraft:wither_skeleton-minecraft:cat",
+      "minecraft:zombie-minecraft:wolf",
+      "minecraft:zombie-minecraft:cat",
+      "biomemakeover:cowboy-minecraft:wolf",
+      "biomemakeover:cowboy-minecraft:cat",
+      "biomemakeover:decayed-minecraft:wolf",
+      "biomemakeover:decayed-minecraft:cat",
+      "betternether:naga-minecraft:villager",
+      "betternether:naga-minecraft:iron_golem",
+      "betternether:naga-minecraft:wolf",
+      "betternether:naga-minecraft:cat",
+      "bygonenether:piglin_prisoner-minecraft:villager",
+      "bygonenether:piglin_prisoner-minecraft:iron_golem",
+      "bygonenether:piglin_hunter-minecraft:villager",
+      "bygonenether:piglin_hunter-minecraft:iron_golem",
+      "bygonenether:piglin_hunter-minecraft:wolf",
+      "bygonenether:piglin_hunter-minecraft:cat",
+      "bygonenether:wex-minecraft:iron_golem",
+      "bygonenether:wex-minecraft:wolf",
+      "bygonenether:wex-minecraft:cat",
+      "bygonenether:wraither-minecraft:wolf",
+      "bygonenether:wraither-minecraft:cat",
+      "bygonenether:corpor-minecraft:wolf",
+      "bygonenether:corpor-minecraft:cat",
+      "bygonenether:wither_skeleton_knight-minecraft:wolf",
+      "bygonenether:wither_skeleton_knight-minecraft:cat",
+      "majruszsdifficulty:cereberus-minecraft:iron_golem",
+      "majruszsdifficulty:cereberus-minecraft:wolf",
+      "majruszsdifficulty:cereberus-minecraft:cat",
+      "majruszsdifficulty:creeperling-minecraft:iron_golem",
+      "majruszsdifficulty:creeperling-minecraft:wolf",
+      "majruszsdifficulty:creeperling-minecraft:cat",
+      "majruszsdifficulty:cursed_armor-minecraft:iron_golem",
+      "majruszsdifficulty:cursed_armor-minecraft:wolf",
+      "majruszsdifficulty:cursed_armor-minecraft:cat",
+      "majruszsdifficulty:giant-minecraft:wolf",
+      "majruszsdifficulty:giant-minecraft:cat",
+      "majruszsdifficulty:illusioner-minecraft:wolf",
+      "majruszsdifficulty:illusioner-minecraft:cat",
+      "majruszsdifficulty:tank-minecraft:iron_golem",
+      "majruszsdifficulty:tank-minecraft:wolf",
+      "majruszsdifficulty:tank-minecraft:cat",
+      "mutantmonsters:creeper_minion-minecraft:iron_golem",
+      "mutantmonsters:creeper_minion-minecraft:wolf",
+      "mutantmonsters:creeper_minion-minecraft:cat",
+      "mutantmonsters:mutant_creeper-minecraft:iron_golem",
+      "mutantmonsters:mutant_creeper-minecraft:wolf",
+      "mutantmonsters:mutant_creeper-minecraft:cat",
+      "mutantmonsters:mutant_enderman-minecraft:villager",
+      "mutantmonsters:mutant_skeleton-minecraft:cat",
+      "mutantmonsters:mutant_zombie-minecraft:wolf",
+      "mutantmonsters:mutant_zombie-minecraft:cat",
+      "mythicmobs:chupacabra-minecraft:iron_golem",
+      "mythicmobs:chupacabra-minecraft:wolf",
+      "mythicmobs:chupacabra-minecraft:cat",
+      "rottencreatures:burned-minecraft:wolf",
+      "rottencreatures:burned-minecraft:cat",
+      "rottencreatures:frostbitten-minecraft:wolf",
+      "rottencreatures:frostbitten-minecraft:cat",
+      "rottencreatures:swampy-minecraft:wolf",
+      "rottencreatures:swampy-minecraft:cat",
+      "rottencreatures:undead_miner-minecraft:wolf",
+      "rottencreatures:undead_miner-minecraft:cat",
+      "rottencreatures:mummy-minecraft:wolf",
+      "rottencreatures:mummy-minecraft:cat",
+      "rottencreatures:glacial_hunter-minecraft:wolf",
+      "rottencreatures:glacial_hunter-minecraft:cat",
+      "rottencreatures:dead_beard-minecraft:wolf",
+      "rottencreatures:dead_beard-minecraft:cat",
+      "rottencreatures:immortal-minecraft:wolf",
+      "rottencreatures:immortal-minecraft:cat"
+    ]
+  },
+  "Difficulty Break AI": {
+    "__comment": [
+      "Difficulty at which mobs are able to break blocks",
+      "Range: > 0.0"
+    ],
+    "input": 0.0
+  },
+  "Difficulty Steal AI": {
+    "__comment": [
+      "Difficulty at which mobs are able to steal items",
+      "Range: > 0.0"
+    ],
+    "input": 30.0
+  },
+  "Guardian Chance": {
+    "__comment": [
+      "Chance for mobs to be able to summon an aquatic mount",
+      "Range: 0.0 ~ 1.0"
+    ],
+    "input": 0.0
+  },
+  "Phantom Chance": {
+    "__comment": [
+      "Chance for mobs to be able to summon a flying mount",
+      "Range: 0.0 ~ 1.0"
+    ],
+    "input": 0.5
+  },
+  "Item Blacklist": {
+    "__comment": [
+      "Blacklist items from whole mods. Add modid to prevent items from that mod being equipped. (For individual items use the equipment.json)"
+    ],
+    "input": []
+  },
+  "Item Whitelist": {
+    "__comment": [
+      "Use blacklist as whitelist"
+    ],
+    "input": false
+  },
+  "Item Use Blacklist": {
+    "__comment": [
+      "Blacklist for items mobs should never be able to use.",
+      "Use as in using the item similar to players (e.g. shooting bows)"
+    ],
+    "input": [
+      "bigbrain:buckler"
+    ]
+  },
+  "Entity Item Use Blacklist": {
+    "__comment": [
+      "Blacklist for specific mobs and items they shouldnt use (e.g. skeletons already use bows)",
+      "<entity registry name-item>",
+      "For different items but same entity use multiple lines",
+      "Some special names are BOW, TRIDEN, CROSSBOW refering to every bow/trident/crossbow item (So you dont need to type e.g. every bow item)"
+    ],
+    "input": [
+      "minecraft:drowned;TRIDENT",
+      "minecraft:illusioner;BOW",
+      "minecraft:piglin;CROSSBOW",
+      "minecraft:pillager;CROSSBOW",
+      "minecraft:skeleton;BOW",
+      "minecraft:snow_golem;minecraft:snowball",
+      "minecraft:stray;BOW",
+      "minecraft:wither_skeleton;BOW",
+      "minecraft:creeper",
+      "minecraft:sheep"
+    ]
+  },
+  "Equipment Chance": {
+    "__comment": [
+      "Base chance that a mob can have one piece of armor",
+      "Range: 0.0 ~ 1.0"
+    ],
+    "input": 0.2
+  },
+  "Additional Equipment Chance": {
+    "__comment": [
+      "Base chance for each additional armor pieces",
+      "Range: 0.0 ~ 1.0"
+    ],
+    "input": 0.2
+  },
+  "Equipment Addition": {
+    "__comment": [
+      "Adds additional x*difficulty% to base equip chance",
+      "Range: > 0.0"
+    ],
+    "input": 0.2
+  },
+  "Weapon Chance": {
+    "__comment": [
+      "Chance for mobs to have a weapon",
+      "Range: 0.0 ~ 1.0"
+    ],
+    "input": 0.2
+  },
+  "Weapon Chance Add": {
+    "__comment": [
+      "Adds additional x*difficulty% to base weapon chance",
+      "Range: > 0.0"
+    ],
+    "input": 0.2
+  },
+  "Enchanting Chance": {
+    "__comment": [
+      "Base chance for each armor pieces to get enchanted",
+      "Range: 0.0 ~ 1.0"
+    ],
+    "input": 0.2
+  },
+  "Enchanting Addition": {
+    "__comment": [
+      "Adds additional x*difficulty% to base enchanting chance",
+      "Range: > 0.0"
+    ],
+    "input": 0.2
+  },
+  "Enchanting Calc": {
+    "__comment": [
+      "Specify min and max enchanting levels according to difficulty. difficulty-minLevel-maxLevel"
+    ],
+    "input": [
+      "0-5-10",
+      "25-5-15",
+      "50-10-17",
+      "100-15-25",
+      "200-20-30",
+      "250-30-35"
+    ]
+  },
+  "Item Equip Chance": {
+    "__comment": [
+      "Chance for mobs to have an item in offhand",
+      "Range: 0.0 ~ 1.0"
+    ],
+    "input": 0.2
+  },
+  "Item Chance add": {
+    "__comment": [
+      "Adds additional x*difficulty% to base item chance",
+      "Range: > 0.0"
+    ],
+    "input": 0.2
+  },
+  "Should drop equipment": {
+    "__comment": [
+      "Should mobs drop the armor equipped through this mod? Will not change drops if the mob obtained the armor through other means (e.g. vanilla)"
+    ],
+    "input": false
+  },
+  "Health Increase Multiplier": {
+    "__comment": [
+      "Health will be multiplied by difficulty*0.016*x. Set to 0 to disable",
+      "Range: > 0.0"
+    ],
+    "input": 0.0
+  },
+  "Max Health Increase": {
+    "__comment": [
+      "Health will be multiplied by at maximum this. Set to 0 means no limit",
+      "Range: > 0.0"
+    ],
+    "input": 0.0
+  },
+  "Round HP": {
+    "__comment": [
+      "Round health to the nearest x. Set to 0 to disable",
+      "Range: > 0.0"
+    ],
+    "input": 0.5
+  },
+  "Damage Increase Multiplier": {
+    "__comment": [
+      "Damage will be multiplied by difficulty*0.008*x. Set to 0 to disable",
+      "Range: > 0.0"
+    ],
+    "input": 0.0
+  },
+  "Max Damage Increase": {
+    "__comment": [
+      "Damage will be multiplied by at maximum this. Set to 0 means no limit",
+      "Range: > 0.0"
+    ],
+    "input": 0.0
+  },
+  "Speed Increase": {
+    "__comment": [
+      "Speed will be increased by difficulty*0.0008*x. Set to 0 to disable",
+      "Range: > 0.0"
+    ],
+    "input": 0.0
+  },
+  "Max Speed": {
+    "__comment": [
+      "Maximum increase in speed",
+      "Range: 0.0 ~ 1.0"
+    ],
+    "input": 0.0
+  },
+  "Knockback Increase": {
+    "__comment": [
+      "Knockback will be increased by difficulty*0.002*x. Set to 0 to disable",
+      "Range: > 0.0"
+    ],
+    "input": 0.0
+  },
+  "Max Knockback": {
+    "__comment": [
+      "Maximum increase in knockback",
+      "Range: 0.0 ~ 1.0"
+    ],
+    "input": 0.0
+  },
+  "Magic Resistance Increase": {
+    "__comment": [
+      "Magic resistance will be increased by difficulty*0.0016*x. Set to 0 to disable",
+      "Range: > 0.0"
+    ],
+    "input": 0.0
+  },
+  "Max Magic Resistance": {
+    "__comment": [
+      "Maximum increase in magic resistance. Magic reduction is percentage",
+      "Range: 0.0 ~ 1.0"
+    ],
+    "input": 0.0
+  },
+  "Projectile Damage Increase": {
+    "__comment": [
+      "Projectile Damage will be multiplied by 1+difficulty*0.008*x. Set to 0 to disable",
+      "Range: > 0.0"
+    ],
+    "input": 0.0
+  },
+  "Max Projectile Damage": {
+    "__comment": [
+      "Projectile damage will be multiplied by maximum of this",
+      "Range: > 0.0"
+    ],
+    "input": 0.0
+  }
+}

@@ -1,0 +1,149 @@
+{
+  "minecraft:hay_block": {
+    "type": "minecraft:campfire_signal_smoke"
+  },
+  "minecraft:white_wool": {
+    "color": [
+      0.9764706,
+      1.0,
+      0.99607843
+    ],
+    "max_age": 280,
+    "type": "smoke_signals:colored_campfire_smoke"
+  },
+  "minecraft:orange_wool": {
+    "color": [
+      0.9764706,
+      0.5019608,
+      0.11372549
+    ],
+    "max_age": 280,
+    "type": "smoke_signals:colored_campfire_smoke"
+  },
+  "minecraft:magenta_wool": {
+    "color": [
+      0.78039217,
+      0.30588236,
+      0.7411765
+    ],
+    "max_age": 280,
+    "type": "smoke_signals:colored_campfire_smoke"
+  },
+  "minecraft:light_blue_wool": {
+    "color": [
+      0.22745098,
+      0.7019608,
+      0.85490197
+    ],
+    "max_age": 280,
+    "type": "smoke_signals:colored_campfire_smoke"
+  },
+  "minecraft:yellow_wool": {
+    "color": [
+      0.99607843,
+      0.84705883,
+      0.23921569
+    ],
+    "max_age": 280,
+    "type": "smoke_signals:colored_campfire_smoke"
+  },
+  "minecraft:lime_wool": {
+    "color": [
+      0.5019608,
+      0.78039217,
+      0.12156863
+    ],
+    "max_age": 280,
+    "type": "smoke_signals:colored_campfire_smoke"
+  },
+  "minecraft:pink_wool": {
+    "color": [
+      0.9529412,
+      0.54509807,
+      0.6666667
+    ],
+    "max_age": 280,
+    "type": "smoke_signals:colored_campfire_smoke"
+  },
+  "minecraft:gray_wool": {
+    "color": [
+      0.2784314,
+      0.30980393,
+      0.32156864
+    ],
+    "max_age": 280,
+    "type": "smoke_signals:colored_campfire_smoke"
+  },
+  "minecraft:light_gray_wool": {
+    "color": [
+      0.6156863,
+      0.6156863,
+      0.5921569
+    ],
+    "max_age": 280,
+    "type": "smoke_signals:colored_campfire_smoke"
+  },
+  "minecraft:cyan_wool": {
+    "color": [
+      0.08627451,
+      0.6117647,
+      0.6117647
+    ],
+    "max_age": 280,
+    "type": "smoke_signals:colored_campfire_smoke"
+  },
+  "minecraft:purple_wool": {
+    "color": [
+      0.5372549,
+      0.19607843,
+      0.72156864
+    ],
+    "max_age": 280,
+    "type": "smoke_signals:colored_campfire_smoke"
+  },
+  "minecraft:blue_wool": {
+    "color": [
+      0.23529412,
+      0.26666668,
+      0.6666667
+    ],
+    "max_age": 280,
+    "type": "smoke_signals:colored_campfire_smoke"
+  },
+  "minecraft:brown_wool": {
+    "color": [
+      0.5137255,
+      0.32941177,
+      0.19607843
+    ],
+    "max_age": 280,
+    "type": "smoke_signals:colored_campfire_smoke"
+  },
+  "minecraft:green_wool": {
+    "color": [
+      0.36862746,
+      0.4862745,
+      0.08627451
+    ],
+    "max_age": 280,
+    "type": "smoke_signals:colored_campfire_smoke"
+  },
+  "minecraft:red_wool": {
+    "color": [
+      0.6901961,
+      0.18039216,
+      0.14901961
+    ],
+    "max_age": 280,
+    "type": "smoke_signals:colored_campfire_smoke"
+  },
+  "minecraft:black_wool": {
+    "color": [
+      0.11372549,
+      0.11372549,
+      0.12941177
+    ],
+    "max_age": 280,
+    "type": "smoke_signals:colored_campfire_smoke"
+  }
+}
