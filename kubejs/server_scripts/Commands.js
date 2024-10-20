@@ -35,16 +35,17 @@ ServerEvents.commandRegistry(event => {
         })
         .then(Commands.literal('confirm').executes(ctx => {
             let player = ctx.source.player
+            let playerUUID = player.getUuid()
             if (!player.stages.has('originReset')) {
                 player.stages.add('originReset')
-                player.runCommandSilent('origin gui')
-                player.runCommandSilent('playsound minecraft:block.end_portal.spawn neutral @s')
-                player.runCommandSilent('playsound minecraft:item.totem.use neutral @s')
-                player.runCommandSilent('alessandrvenchantments:healingwave')
-                player.runCommandSilent('particle minecraft:sonic_boom')
+                player.server.runCommandSilent(`execute as ${playerUUID} run origin gui`)
+                player.server.runCommandSilent(`execute as ${playerUUID} run playsound minecraft: block.end_portal.spawn neutral ${playerUUID}`)
+                player.server.runCommandSilent(`execute as ${playerUUID} run playsound minecraft:item.totem.use neutral ${playerUUID}`)
+                player.server.runCommandSilent(`execute as ${playerUUID} run particle alessandrvenchantments:healingwave ${player.x} ${player.y} ${player.z}`)
+                player.server.runCommandSilent(`execute as ${playerUUID} run particle minecraft:sonic_boom ${player.x} ${player.y} ${player.z}`)
             } else {
                 player.tell(Text.red('You\'ve already reset your origin.'))
-                player.runCommandSilent('playsound minecraft:entity.elder_guardian.curse ambient @s')
+                player.server.runCommandSilent(`execute as ${playerUUID} run playsound minecraft:entity.elder_guardian.curse ambient @s`)
                 return 0
             }
             return 1
@@ -54,9 +55,10 @@ ServerEvents.commandRegistry(event => {
     event.register(Commands.literal('freeBonusChest')
         .executes(ctx => {
             let player = ctx.source.player
+            let playerUUID = player.getUuid()
             if (!player.stages.has('bonusLoot')) {
                 player.stages.add('bonusLoot')
-                player.runCommandSilent('loot give @s loot minecraft:chests/spawn_bonus_chest')
+                player.server.runCommandSilent('execute as ' + playerUUID + ' run loot give @s loot minecraft:chests/spawn_bonus_chest')
             } else {
                 player.tell(Text.red('You\'ve already received your bonus loot.'))
                 return 0

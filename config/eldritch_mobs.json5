@@ -1,7 +1,7 @@
 {
-	"EliteSpawnRates": 0.05,
-	"UltraSpawnRates": 0.0125,
-	"EldritchSpawnRates": 0.005,
+	"EliteSpawnRates": 0.0375,
+	"UltraSpawnRates": 0.009375,
+	"EldritchSpawnRates": 3.75E-4,
 	"EliteHealthMultiplier": 3.0,
 	"UltraHealthMultiplier": 5.0,
 	"EldritchHealthMultiplier": 10.0,
@@ -13,7 +13,7 @@
 	"EldritchMinModifiers": 8,
 	"EliteMaxModifiers": 2,
 	"UltraMaxModifiers": 3,
-	"EldritchMaxModifiers": 25,
+	"EldritchMaxModifiers": 12,
 	// Prevent named mobs from becoming Elite, Ultra, and Eldritch
 	"ignoreNamedMobs": true,
 	// Turn off titles for mobs
@@ -34,7 +34,7 @@
 	"genericTitles": false,
 	"alchemistConfig": {
 		"name": "Alchemist",
-		"disabled": false,
+		"disabled": true,
 		"cooldown": 200,
 		"useStrongHealing": false,
 		"useStrongHarming": false
@@ -46,14 +46,14 @@
 	},
 	"blindingConfig": {
 		"name": "Blinding",
-		"disabled": false,
+		"disabled": true,
 		"cooldown": 300,
 		"duration": 80,
 		"amplifier": 0
 	},
 	"burningConfig": {
 		"name": "Burning",
-		"disabled": false,
+		"disabled": true,
 		"cooldown": 500,
 		"fireDuration": 6
 	},
@@ -170,7 +170,7 @@
 		"fireResistanceDuration": 800
 	},
 	"weaknessConfig": {
-		"name": "Weakness",
+		"name": "Weakening",
 		"disabled": false,
 		"cooldown": 250,
 		"duration": 100,

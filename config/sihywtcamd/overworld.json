@@ -1,7 +1,7 @@
 {
   "general": {
-    "mobsLessFear": true,
-    "merchantHostility": true
+    "mobsLessFear": false,
+    "merchantHostility": false
   },
   "creeper": {
     "explosionFatigue": true,
@@ -23,6 +23,6 @@
   },
   "guardian": {
     "naturalSpawn": true,
-    "silentKill": true
+    "silentKill": false
   }
 }

@@ -41,10 +41,6 @@ MoreJSEvents.villagerTrades((event) => {
     event.addTrade("minecraft:librarian", 5, Item.of("minecraft:diamond_block", 10), "travelersbackpack:iron_tier_upgrade")
   });
 
-MoreJSEvents.updateVillagerOffers((event) => {
-    event.offer.replaceItems("travelersbackpack:villager", "travelersbackpack:standard");
-});
-
 LootJS.modifiers(event => {
     event.addEntityLootModifier("minecraft:ravager")
          .randomChance(0.33)

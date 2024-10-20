@@ -2,7 +2,35 @@
 
 ServerEvents.recipes(event => {
     
-  event.remove({ id: "waystones:waystone" })
+  event.shaped(
+    Item.of('minecraft:ender_chest', 1),
+    [
+      'AAA',
+      'ABA',
+      'AAA'
+    ],
+    {
+      A: 'minecraft:obsidian',
+      B: 'minecraft:ender_pearl'
+    }
+  ).id("minecraft:ender_chest")
+    
+  event.shaped(
+    Item.of('waystones:waystone', 1),
+    [
+      'CEC',
+      'DAD',
+      'FBF'
+    ],
+    {
+      A: 'waystones:warp_stone',
+      B: 'minecraft:ender_chest',
+      C: 'minecraft:diamond_block',
+      D: 'minecraft:emerald_block',
+      E: 'minecraft:enchanting_table',
+      F: 'botania:mana_void'
+    }
+  ).id("waystones:waystone")
     
   event.remove({ id: "waystones:mossy_waystone" })
     

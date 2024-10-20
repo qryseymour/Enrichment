@@ -1,5 +1,30 @@
 ServerEvents.recipes(event => {
     event.shaped(
+        Item.of('potionvapes:vape_juice', 1),
+        [
+            ' B ',
+            ' A ',
+            ' A '
+        ],
+        {
+            A: 'minecraft:glass',
+            B: 'minecraft:quartz'
+        }
+    ).id("enrichment:vape_juice")
+    event.shaped(
+        Item.of('potionvapes:vape_juicer', 1),
+        [
+            'CBC',
+            'CAC',
+            'CCC'
+        ],
+        {
+            A: 'minecraft:brewing_stand',
+            B: 'explsbottle:blaze_bottle',
+            C: 'botania:quartz_blaze'
+        }
+    ).id("potionvapes:vape_juicer")
+    event.shaped(
         Item.of('potionvapes:vape', 1),
         [
             ' AD',
@@ -8,7 +33,7 @@ ServerEvents.recipes(event => {
         ],
         {
             A: 'minecraft:iron_ingot',
-            B: 'betternether:smoker',
+            B: 'minecraft:flint_and_steel',
             C: 'minecraft:wither_rose',
             D: 'botania:dark_quartz',
             E: 'minecraft:tripwire_hook',

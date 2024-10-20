@@ -261,7 +261,7 @@
     "__comment": [
       "Should the scaling health mods difficulty system be used instead of this ones. (Requires scaling health mod)"
     ],
-    "input": true
+    "input": false
   },
   "Use Player EX Mod": {
     "__comment": [
@@ -306,7 +306,7 @@
       "Chance for a mob to be able to break blocks",
       "Range: 0.0 ~ 1.0"
     ],
-    "input": 0.3
+    "input": 0.2
   },
   "Breaker Initial Cooldown": {
     "__comment": [
@@ -488,7 +488,7 @@
       "Chance for mobs to be able to summon a flying mount",
       "Range: 0.0 ~ 1.0"
     ],
-    "input": 0.5
+    "input": 0.0
   },
   "Item Blacklist": {
     "__comment": [
@@ -536,49 +536,49 @@
       "Base chance that a mob can have one piece of armor",
       "Range: 0.0 ~ 1.0"
     ],
-    "input": 0.2
+    "input": 0.0
   },
   "Additional Equipment Chance": {
     "__comment": [
       "Base chance for each additional armor pieces",
       "Range: 0.0 ~ 1.0"
     ],
-    "input": 0.2
+    "input": 0.0
   },
   "Equipment Addition": {
     "__comment": [
       "Adds additional x*difficulty% to base equip chance",
       "Range: > 0.0"
     ],
-    "input": 0.2
+    "input": 0.0
   },
   "Weapon Chance": {
     "__comment": [
       "Chance for mobs to have a weapon",
       "Range: 0.0 ~ 1.0"
     ],
-    "input": 0.2
+    "input": 0.0
   },
   "Weapon Chance Add": {
     "__comment": [
       "Adds additional x*difficulty% to base weapon chance",
       "Range: > 0.0"
     ],
-    "input": 0.2
+    "input": 0.0
   },
   "Enchanting Chance": {
     "__comment": [
       "Base chance for each armor pieces to get enchanted",
       "Range: 0.0 ~ 1.0"
     ],
-    "input": 0.2
+    "input": 0.0
   },
   "Enchanting Addition": {
     "__comment": [
       "Adds additional x*difficulty% to base enchanting chance",
       "Range: > 0.0"
     ],
-    "input": 0.2
+    "input": 0.0
   },
   "Enchanting Calc": {
     "__comment": [
@@ -605,7 +605,7 @@
       "Adds additional x*difficulty% to base item chance",
       "Range: > 0.0"
     ],
-    "input": 0.2
+    "input": 0.0
   },
   "Should drop equipment": {
     "__comment": [
