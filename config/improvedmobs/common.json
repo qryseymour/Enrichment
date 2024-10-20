@@ -488,7 +488,7 @@
       "Chance for mobs to be able to summon a flying mount",
       "Range: 0.0 ~ 1.0"
     ],
-    "input": 0.0
+    "input": 0.2
   },
   "Item Blacklist": {
     "__comment": [
@@ -557,7 +557,7 @@
       "Chance for mobs to have a weapon",
       "Range: 0.0 ~ 1.0"
     ],
-    "input": 0.0
+    "input": 0.2
   },
   "Weapon Chance Add": {
     "__comment": [
