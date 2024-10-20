@@ -598,7 +598,7 @@
       "Chance for mobs to have an item in offhand",
       "Range: 0.0 ~ 1.0"
     ],
-    "input": 0.2
+    "input": 0.05
   },
   "Item Chance add": {
     "__comment": [

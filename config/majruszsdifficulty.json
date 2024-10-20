@@ -1,6 +1,6 @@
 {
   "game_stages": {
-    "is_per_player_difficulty_enabled": true,
+    "is_per_player_difficulty_enabled": false,
     "list": [
       {
         "id": "normal",
@@ -78,7 +78,7 @@
   },
   "features": {
     "block_illusioner_from_joining_raids": {
-      "is_enabled": false,
+      "is_enabled": true,
       "required_game_stage": "normal"
     },
     "creeper_chain_reaction": {
@@ -131,7 +131,7 @@
       ]
     },
     "creeper_split_into_creeperlings": {
-      "is_enabled": true,
+      "is_enabled": false,
       "count": {
         "__default": 1,
         "expert": 1,
@@ -141,7 +141,7 @@
       "is_scaled_by_crd": true
     },
     "deadlier_explosions": {
-      "is_enabled": true,
+      "is_enabled": false,
       "required_game_stage": "expert",
       "radius_multiplier": 1.2599,
       "fire_chance": 0.75,
@@ -456,7 +456,7 @@
       "is_scaled_by_crd": true
     },
     "spawn_player_zombie": {
-      "is_enabled": true,
+      "is_enabled": false,
       "required_game_stage": "expert",
       "chance": 0.2,
       "is_scaled_by_crd": false,
@@ -464,11 +464,11 @@
       "head_drop_chance": 0.1
     },
     "spawn_rate_increaser": {
-      "is_enabled": false,
+      "is_enabled": true,
       "multiplier": {
         "__default": 1.0,
-        "expert": 1.1,
-        "master": 1.2
+        "expert": 1.0,
+        "master": 1.0
       }
     }
   },
@@ -486,30 +486,30 @@
     "highlight_delay": 600.0,
     "extra_size_ratio_per_player": 0.5,
     "area_radius": 70,
-    "kill_requirement": 100,
-    "kill_requirement_first": 25,
+    "kill_requirement": 75,
+    "kill_requirement_first": 20,
     "kill_requirement_warning": 3,
     "waves": [
       {
         "mobs": [
           {
             "type": "minecraft:zombie",
-            "equipment": "majruszsdifficulty:undead_army/wave_1_mob",
+            "equipment": "minecraft:chests/village/village_tannery",
             "count": 2
           },
           {
             "type": "minecraft:skeleton",
-            "equipment": "majruszsdifficulty:undead_army/wave_1_mob",
+            "equipment": "minecraft:chests/village/village_tannery",
             "count": 2
           },
           {
             "type": "minecraft:zombie",
-            "equipment": "majruszsdifficulty:undead_army/wave_1_mob",
+            "equipment": "minecraft:chests/village/village_tannery",
             "count": 2
           },
           {
             "type": "minecraft:skeleton",
-            "equipment": "majruszsdifficulty:undead_army/wave_1_mob",
+            "equipment": "minecraft:chests/village/village_tannery",
             "count": 2
           }
         ],
@@ -520,22 +520,22 @@
         "mobs": [
           {
             "type": "minecraft:zombie",
-            "equipment": "majruszsdifficulty:undead_army/wave_2_mob",
+            "equipment": "minecraft:chests/ruined_portal",
             "count": 2
           },
           {
             "type": "minecraft:skeleton",
-            "equipment": "majruszsdifficulty:undead_army/wave_2_mob",
+            "equipment": "minecraft:chests/ruined_portal",
             "count": 3
           },
           {
             "type": "minecraft:zombie",
-            "equipment": "majruszsdifficulty:undead_army/wave_2_mob",
+            "equipment": "minecraft:chests/ruined_portal",
             "count": 3
           },
           {
             "type": "minecraft:skeleton",
-            "equipment": "majruszsdifficulty:undead_army/wave_2_mob",
+            "equipment": "minecraft:chests/ruined_portal",
             "count": 2
           }
         ],
@@ -546,22 +546,22 @@
         "mobs": [
           {
             "type": "minecraft:zombie",
-            "equipment": "majruszsdifficulty:undead_army/wave_3_mob",
+            "equipment": "minecraft:chests/village/village_armorer",
             "count": 3
           },
           {
             "type": "minecraft:skeleton",
-            "equipment": "majruszsdifficulty:undead_army/wave_3_skeleton",
+            "equipment": "betterdungeons:skeleton_dungeon/chests/common",
             "count": 3
           },
           {
             "type": "minecraft:husk",
-            "equipment": "majruszsdifficulty:undead_army/wave_3_mob",
+            "equipment": "minecraft:chests/village/village_armorer",
             "count": 3
           },
           {
             "type": "minecraft:stray",
-            "equipment": "majruszsdifficulty:undead_army/wave_3_skeleton",
+            "equipment": "betterdungeons:skeleton_dungeon/chests/common",
             "count": 3
           }
         ],
@@ -576,22 +576,22 @@
         "mobs": [
           {
             "type": "minecraft:zombie",
-            "equipment": "majruszsdifficulty:undead_army/wave_4_mob",
+            "equipment": "minecraft:chests/end_city_treasure",
             "count": 2
           },
           {
             "type": "minecraft:wither_skeleton",
-            "equipment": "majruszsdifficulty:undead_army/wave_4_mob",
+            "equipment": "minecraft:chests/end_city_treasure",
             "count": 1
           },
           {
             "type": "minecraft:skeleton",
-            "equipment": "majruszsdifficulty:undead_army/wave_4_skeleton",
+            "equipment": "betterdungeons:skeleton_dungeon/chests/common",
             "count": 2
           },
           {
             "type": "minecraft:wither_skeleton",
-            "equipment": "majruszsdifficulty:undead_army/wave_4_mob",
+            "equipment": "minecraft:chests/end_city_treasure",
             "count": 1
           },
           {
@@ -600,22 +600,22 @@
           },
           {
             "type": "minecraft:husk",
-            "equipment": "majruszsdifficulty:undead_army/wave_4_mob",
+            "equipment": "minecraft:chests/end_city_treasure",
             "count": 3
           },
           {
             "type": "minecraft:wither_skeleton",
-            "equipment": "majruszsdifficulty:undead_army/wave_4_mob",
+            "equipment": "minecraft:chests/end_city_treasure",
             "count": 1
           },
           {
             "type": "minecraft:stray",
-            "equipment": "majruszsdifficulty:undead_army/wave_4_skeleton",
+            "equipment": "betterdungeons:skeleton_dungeon/chests/common",
             "count": 3
           },
           {
             "type": "minecraft:wither_skeleton",
-            "equipment": "majruszsdifficulty:undead_army/wave_4_mob",
+            "equipment": "minecraft:chests/end_city_treasure",
             "count": 1
           }
         ],
@@ -626,22 +626,22 @@
         "mobs": [
           {
             "type": "minecraft:zombie",
-            "equipment": "majruszsdifficulty:undead_army/wave_5_mob",
+            "equipment": "majruszsdifficulty:gameplay/cursed_armor_dungeon",
             "count": 1
           },
           {
             "type": "minecraft:skeleton",
-            "equipment": "majruszsdifficulty:undead_army/wave_5_skeleton",
+            "equipment": "betterdungeons:skeleton_dungeon/chests/common",
             "count": 1
           },
           {
             "type": "minecraft:stray",
-            "equipment": "majruszsdifficulty:undead_army/wave_5_skeleton",
+            "equipment": "betterdungeons:skeleton_dungeon/chests/common",
             "count": 3
           },
           {
             "type": "minecraft:wither_skeleton",
-            "equipment": "majruszsdifficulty:undead_army/wave_5_mob",
+            "equipment": "majruszsdifficulty:gameplay/cursed_armor_dungeon",
             "count": 2
           },
           {
@@ -650,12 +650,12 @@
           },
           {
             "type": "minecraft:husk",
-            "equipment": "majruszsdifficulty:undead_army/wave_5_mob",
+            "equipment": "majruszsdifficulty:gameplay/cursed_armor_dungeon",
             "count": 3
           },
           {
             "type": "minecraft:wither_skeleton",
-            "equipment": "majruszsdifficulty:undead_army/wave_5_mob",
+            "equipment": "majruszsdifficulty:gameplay/cursed_armor_dungeon",
             "count": 2
           }
         ],
@@ -670,12 +670,12 @@
         "mobs": [
           {
             "type": "minecraft:zombie",
-            "equipment": "majruszsdifficulty:undead_army/wave_6_mob",
+            "equipment": "majruszsdifficulty:gameplay/cursed_armor_end",
             "count": 1
           },
           {
             "type": "minecraft:skeleton",
-            "equipment": "majruszsdifficulty:undead_army/wave_6_skeleton",
+            "equipment": "betterdungeons:skeleton_dungeon/chests/common",
             "count": 1
           },
           {
@@ -684,17 +684,12 @@
           },
           {
             "type": "minecraft:stray",
-            "equipment": "majruszsdifficulty:undead_army/wave_6_skeleton",
+            "equipment": "betterdungeons:skeleton_dungeon/chests/common",
             "count": 1
           },
           {
             "type": "minecraft:husk",
-            "equipment": "majruszsdifficulty:undead_army/wave_6_mob",
-            "count": 1
-          },
-          {
-            "type": "minecraft:wither_skeleton",
-            "equipment": "majruszsdifficulty:undead_army/wave_6_wither_skeleton",
+            "equipment": "majruszsdifficulty:gameplay/cursed_armor_end",
             "count": 1
           },
           {
@@ -704,7 +699,6 @@
         ],
         "boss": {
           "type": "majruszsdifficulty:giant",
-          "equipment": "majruszsdifficulty:undead_army/wave_6_mob",
           "count": 1
         },
         "game_stage": "master",

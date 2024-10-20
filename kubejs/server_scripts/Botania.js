@@ -1,36 +1,36 @@
 ServerEvents.recipes(event => {
 
-    event.recipes.botania.petal_apothecary("botania:white_petal", ["minecraft:gold_ingot", "minecraft:emerald", "minecraft:white_dye"])
+    event.recipes.botania.petal_apothecary("botania:white_petal", ["minecraft:gold_ingot", "minecraft:emerald", "spellbound:emerald_shard", "spellbound:emerald_shard", "spellbound:emerald_shard", "spellbound:emerald_shard", "minecraft:white_dye"])
 
-    event.recipes.botania.petal_apothecary("botania:orange_petal", ["minecraft:gold_ingot", "minecraft:emerald", "minecraft:orange_dye"])
+    event.recipes.botania.petal_apothecary("botania:orange_petal", ["minecraft:gold_ingot", "minecraft:emerald", "spellbound:emerald_shard", "spellbound:emerald_shard", "spellbound:emerald_shard", "spellbound:emerald_shard", "minecraft:orange_dye"])
 
-    event.recipes.botania.petal_apothecary("botania:magenta_petal", ["minecraft:gold_ingot", "minecraft:emerald", "minecraft:magenta_dye"])
+    event.recipes.botania.petal_apothecary("botania:magenta_petal", ["minecraft:gold_ingot", "minecraft:emerald", "spellbound:emerald_shard", "spellbound:emerald_shard", "spellbound:emerald_shard", "spellbound:emerald_shard", "minecraft:magenta_dye"])
 
-    event.recipes.botania.petal_apothecary("botania:light_blue_petal", ["minecraft:gold_ingot", "minecraft:emerald", "minecraft:light_blue_dye"])
+    event.recipes.botania.petal_apothecary("botania:light_blue_petal", ["minecraft:gold_ingot", "minecraft:emerald", "spellbound:emerald_shard", "spellbound:emerald_shard", "spellbound:emerald_shard", "spellbound:emerald_shard", "minecraft:light_blue_dye"])
 
-    event.recipes.botania.petal_apothecary("botania:yellow_petal", ["minecraft:gold_ingot", "minecraft:emerald", "minecraft:yellow_dye"])
+    event.recipes.botania.petal_apothecary("botania:yellow_petal", ["minecraft:gold_ingot", "minecraft:emerald", "spellbound:emerald_shard", "spellbound:emerald_shard", "spellbound:emerald_shard", "spellbound:emerald_shard", "minecraft:yellow_dye"])
 
-    event.recipes.botania.petal_apothecary("botania:lime_petal", ["minecraft:gold_ingot", "minecraft:emerald", "minecraft:lime_dye"])
+    event.recipes.botania.petal_apothecary("botania:lime_petal", ["minecraft:gold_ingot", "minecraft:emerald", "spellbound:emerald_shard", "spellbound:emerald_shard", "spellbound:emerald_shard", "spellbound:emerald_shard", "minecraft:lime_dye"])
 
-    event.recipes.botania.petal_apothecary("botania:pink_petal", ["minecraft:gold_ingot", "minecraft:emerald", "minecraft:pink_dye"])
+    event.recipes.botania.petal_apothecary("botania:pink_petal", ["minecraft:gold_ingot", "minecraft:emerald", "spellbound:emerald_shard", "spellbound:emerald_shard", "spellbound:emerald_shard", "spellbound:emerald_shard", "minecraft:pink_dye"])
 
-    event.recipes.botania.petal_apothecary("botania:gray_petal", ["minecraft:gold_ingot", "minecraft:emerald", "minecraft:gray_dye"])
+    event.recipes.botania.petal_apothecary("botania:gray_petal", ["minecraft:gold_ingot", "minecraft:emerald", "spellbound:emerald_shard", "spellbound:emerald_shard", "spellbound:emerald_shard", "spellbound:emerald_shard", "minecraft:gray_dye"])
 
-    event.recipes.botania.petal_apothecary("botania:light_gray_petal", ["minecraft:gold_ingot", "minecraft:emerald", "minecraft:light_gray_dye"])
+    event.recipes.botania.petal_apothecary("botania:light_gray_petal", ["minecraft:gold_ingot", "minecraft:emerald", "spellbound:emerald_shard", "spellbound:emerald_shard", "spellbound:emerald_shard", "spellbound:emerald_shard", "minecraft:light_gray_dye"])
 
-    event.recipes.botania.petal_apothecary("botania:cyan_petal", ["minecraft:gold_ingot", "minecraft:emerald", "minecraft:cyan_dye"])
+    event.recipes.botania.petal_apothecary("botania:cyan_petal", ["minecraft:gold_ingot", "minecraft:emerald", "spellbound:emerald_shard", "spellbound:emerald_shard", "spellbound:emerald_shard", "spellbound:emerald_shard", "minecraft:cyan_dye"])
 
-    event.recipes.botania.petal_apothecary("botania:purple_petal", ["minecraft:gold_ingot", "minecraft:emerald", "minecraft:purple_dye"])
+    event.recipes.botania.petal_apothecary("botania:purple_petal", ["minecraft:gold_ingot", "minecraft:emerald", "spellbound:emerald_shard", "spellbound:emerald_shard", "spellbound:emerald_shard", "spellbound:emerald_shard", "minecraft:purple_dye"])
 
-    event.recipes.botania.petal_apothecary("botania:blue_petal", ["minecraft:gold_ingot", "minecraft:emerald", "minecraft:blue_dye"])
+    event.recipes.botania.petal_apothecary("botania:blue_petal", ["minecraft:gold_ingot", "minecraft:emerald", "spellbound:emerald_shard", "spellbound:emerald_shard", "spellbound:emerald_shard", "spellbound:emerald_shard", "minecraft:blue_dye"])
 
-    event.recipes.botania.petal_apothecary("botania:brown_petal", ["minecraft:gold_ingot", "minecraft:emerald", "minecraft:brown_dye"])
+    event.recipes.botania.petal_apothecary("botania:brown_petal", ["minecraft:gold_ingot", "minecraft:emerald", "spellbound:emerald_shard", "spellbound:emerald_shard", "spellbound:emerald_shard", "spellbound:emerald_shard", "minecraft:brown_dye"])
 
-    event.recipes.botania.petal_apothecary("botania:green_petal", ["minecraft:gold_ingot", "minecraft:emerald", "minecraft:green_dye"])
+    event.recipes.botania.petal_apothecary("botania:green_petal", ["minecraft:gold_ingot", "minecraft:emerald", "spellbound:emerald_shard", "spellbound:emerald_shard", "spellbound:emerald_shard", "spellbound:emerald_shard", "minecraft:green_dye"])
 
-    event.recipes.botania.petal_apothecary("botania:red_petal", ["minecraft:gold_ingot", "minecraft:emerald", "minecraft:red_dye"])
+    event.recipes.botania.petal_apothecary("botania:red_petal", ["minecraft:gold_ingot", "minecraft:emerald", "spellbound:emerald_shard", "spellbound:emerald_shard", "spellbound:emerald_shard", "spellbound:emerald_shard", "minecraft:red_dye"])
 
-    event.recipes.botania.petal_apothecary("botania:black_petal", ["minecraft:gold_ingot", "minecraft:emerald", "minecraft:black_dye"])
+    event.recipes.botania.petal_apothecary("botania:black_petal", ["minecraft:gold_ingot", "minecraft:emerald", "spellbound:emerald_shard", "spellbound:emerald_shard", "spellbound:emerald_shard", "spellbound:emerald_shard", "minecraft:black_dye"])
 
     event.shaped(
         Item.of('botania:enchanted_soil', 1),
