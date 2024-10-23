@@ -466,8 +466,8 @@
     "spawn_rate_increaser": {
       "is_enabled": true,
       "multiplier": {
-        "__default": 1.0,
-        "expert": 1.0,
+        "__default": 0.75,
+        "expert": 0.8,
         "master": 1.0
       }
     }
